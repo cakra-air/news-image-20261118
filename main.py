@@ -114,6 +114,7 @@ def main():
 
     rect(px, 0, 0, W, H, BG)
     rect(px, 0, 0, W, 122, RED)
+    rect(px, 0, 122, W, 6, GOLD)
     draw_text(px, 'WORLD NEWS', 60, 20, 9, WHITE)
     draw_text(px, '18 NOV 2026', 60, 90, 4, GOLD)
 
@@ -134,8 +135,9 @@ def main():
         rect(px, 60, y + 36, W - 120, 2, DIM)
         y += 94
 
+    rect(px, 60, H - 76, W - 120, 2, GOLD)
     rect(px, 0, H - 72, W, 72, (18, 30, 54))
-    draw_text(px, 'ONE IMAGE OF THE DAY', 60, H - 52, 3, GREY)
+    draw_text(px, 'ONE IMAGE OF THE DAY - 18 NOV 2026', 60, H - 52, 3, GREY)
 
     outdir = os.environ.get('MAKEFUN_OUTPUT_DIR', '/output')
     os.makedirs(outdir, exist_ok=True)
